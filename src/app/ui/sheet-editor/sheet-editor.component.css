@@ -1,0 +1,39 @@
+fieldset {
+  border: none;
+  margin: 25px 0;
+}
+
+fieldset:hover {
+  box-shadow: 0px 0px 10px lightgrey;
+}
+
+div.label {
+  display: inline-block;
+}
+
+div.help {
+  display: none;
+  font-size: 75%;
+  margin-left: 20px;
+  font-style: italic;
+}
+fieldset:hover div.help {
+  display: inline-block;
+}
+
+div.inputs {
+  text-align: right;
+}
+
+div.inputs input {
+  width: 50px;
+  border-radius: 15px;
+  border: 5px solid;
+  line-height: 20px;
+  font-size: 16px;
+  height: 30px;
+  text-align: right;
+  outline: none;
+  box-sizing: border-box;
+  margin: 5px;
+}

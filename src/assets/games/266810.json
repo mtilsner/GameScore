@@ -1,0 +1,48 @@
+{
+  "id": "266810",
+  "title": "Paladine des Westfrankenreichs",
+  "maxPlayers": 4,
+  "imageUrl": "https://cf.geekdo-images.com/4nhokcLdYoo6ulbZ1rmGgA__itemrep/img/2YT-EqfAb6vwxDSrFQMSm-luQAs=/fit-in/246x300/filters:strip_icc()/pic4462987.png",
+  "scoring": {
+    "method": "add",
+    "fields": [
+      {
+        "label": "Erfüllte Auftragskarten"
+      },
+      {
+        "label": "Eigenschaftsleiste"
+      },
+      {
+        "label": "Entwicklungen",
+        "tooltip": "falls mindestens 6 ausgeführt wurden"
+      },
+      {
+        "label": "Entsendungen",
+        "tooltip": "falls mindestens 5 ausgeführt wurden"
+      },
+      {
+        "label": "Befestigungen",
+        "tooltip": "falls mindestens 5 ausgeführt wurden"
+      },
+      {
+        "label": "Außenposten",
+        "tooltop": "falls mindestens 5 errichtet wurden"
+      },
+      {
+        "label": "Lossprechungen",
+        "tooltip": "falls mindestens 5 ausgeführt wurden"
+      },
+      {
+        "label": "Schuldscheine",
+        "tooltop": "beglichene und offene"
+      },
+      {
+        "label": "Silber/Proviant",
+        "tooltop": "1 SP je 3 Stück"
+      },
+      {
+        "label": "Konvertierte Fremde"
+      }
+    ]
+  }
+}

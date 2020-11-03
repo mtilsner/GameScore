@@ -1,0 +1,45 @@
+<div class="header">
+  <a class="column" [routerLink]="'/'" title="zurück"
+    ><i class="fas fa-chevron-left"></i
+  ></a>
+  <div class="column spacer"></div>
+  <div class="players column">
+    <span
+      *ngFor="let playerScore of sheets[currentSheetIndex].values; let i = index"
+      class="playerColor {{playerScore.hidden ? 'hidden': ''}}"
+      (click)="togglePlayer(i)"
+      style="background-color:{{playerScore.color}};"
+    >
+      <i class="fas fa-eye-slash"></i>
+      <span>{{calculateScore(playerScore)}}</span>
+    </span>
+  </div>
+</div>
+<div class="content">
+  {{sheets[currentSheetIndex].title}}<br />
+  <sheet-editor [sheet]="sheets[currentSheetIndex]"></sheet-editor>
+</div>
+<div class="footer">
+  <div class="column" style="background-color: red;">
+    <button
+      style="background-color: green;"
+      [attr.disabled]="(currentSheetIndex <= 0) ? true: null"
+      (click)="currentSheetIndex = currentSheetIndex-1"
+    >
+      <i class="fas fa-caret-square-left"></i>
+    </button>
+    {{currentSheetIndex+1}} / {{sheets.length}}
+    <button
+      style="background-color: yellow;"
+      [attr.disabled]="(sheets.length <= 1 || currentSheetIndex >= (sheets.length-1)) ? true : null"
+      (click)="currentSheetIndex = currentSheetIndex+1"
+    >
+      <i class="fas fa-caret-square-right"></i>
+    </button>
+  </div>
+  <div class="column spacer"></div>
+  <div class="column buttons">
+    <button (click)="createSheet()"><i class="fas fa-plus-circle"></i></button>
+    <button (click)="deleteCurrentSheet()"><i class="fas fa-trash"></i></button>
+  </div>
+</div>

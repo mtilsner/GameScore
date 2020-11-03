@@ -1,0 +1,88 @@
+.header,
+.footer,
+.content {
+  width: 100%;
+  margin: 0;
+  background: white;
+}
+
+.header {
+  position: sticky;
+}
+
+.header,
+.footer {
+  position: fixed;
+  display: flex;
+  height: 10mm;
+  justify-content: space-between;
+  box-shadow: 0px 0px 10px lightgrey;
+}
+
+.header {
+  top: 0;
+}
+
+.footer {
+  bottom: 0px;
+}
+
+.content {
+  margin-top: 10mm;
+  margin-bottom: 10mm;
+}
+
+.column {
+  margin: 1mm;
+  box-sizing: border-box;
+  font-size: 6mm;
+  height: 8mm;
+  line-height: 8mm;
+}
+.column.spacer {
+  flex-grow: 1000;
+}
+
+.header a,
+.footer button {
+  width: 8mm;
+  height: 8mm;
+  font-size: 6mm;
+  text-align: center;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.footer button i {
+  background: white;
+}
+
+.playerColor {
+  width: 8mm;
+  height: 8mm;
+  border-radius: 4mm;
+  margin: 0mm 3mm;
+  text-align: center;
+  padding: 1mm;
+  box-sizing: border-box;
+  float: left;
+  font-size: 4mm;
+  line-height: 6.7mm;
+}
+
+.playerColor.hidden i.fas {
+  display: inline-block;
+}
+
+.playerColor.hidden span {
+  display: none;
+}
+
+.playerColor i.fas {
+  display: none;
+}
+
+.playerColor.hidden {
+  opacity: 0.5;
+}

@@ -1,0 +1,18 @@
+<form [formGroup]="formGroup">
+  <fieldset *ngFor="let fieldEntry of formGroup.controls | keyvalue;">
+    <div class="label">{{fieldEntry.value.field.label}}</div>
+    <div class="help" *ngIf="fieldEntry.value.field.tooltip">
+      {{fieldEntry.value.field.tooltip}}
+    </div>
+
+    <div class="inputs" formGroupName="{{fieldEntry.key}}">
+      <input
+        *ngFor="let playerEntry of fieldEntry.value.controls | keyvalue"
+        type="number"
+        pattern="[0-9]*"
+        formControlName="{{playerEntry.key}}"
+        style="border-color:{{playerEntry.value.playerScore.color}};display:{{playerEntry.value.playerScore.hidden ? 'none': ''}}"
+      />
+    </div>
+  </fieldset>
+</form>

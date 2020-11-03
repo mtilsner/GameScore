@@ -1,0 +1,44 @@
+{
+  "id": "236457",
+  "title": "Architekten des Westfrankenreichs",
+  "maxPlayers": 6,
+  "imageUrl": "https://cf.geekdo-images.com/OAX7HfOz-9N60StgADzd0g__itemrep/img/Nfd6TTEABLJPznWr9ogfUpoASRU=/fit-in/246x300/filters:strip_icc()/pic3781944.png",
+  "scoring": {
+    "method": "add",
+    "fields": [
+      {
+        "label": "Gebäude"
+      },
+      {
+        "label": "Kathedrale"
+      },
+      {
+        "label": "Tugend"
+      },
+      {
+        "label": "Offfene Schuldscheine",
+        "tooltip": "jeweils -2 SP"
+      },
+      {
+        "label": "Gold / Mamor",
+        "tooltip": "jeweils 1 SP"
+      },
+      {
+        "label": "Silber",
+        "tooltop": "jeweils 1 SP pro 10 Silber"
+      },
+      {
+        "label": "Gefängnis",
+        "tooltip": "-1 SP je 2 eigener Arbeiter im Gefängnis"
+      },
+      {
+        "label": "Verzierungen",
+        "tooltip": "Nur mit Erweiterung"
+      },
+      {
+        "label": "Werkzeuge",
+        "tooltip": "Nur mit Erweiterung"
+      }
+    ]
+  }
+}

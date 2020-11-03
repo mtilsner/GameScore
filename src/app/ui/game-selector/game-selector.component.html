@@ -1,0 +1,6 @@
+<div class="header">
+  <input type="text" name="search" (input)="filter($event.target.value)" />
+</div>
+<a *ngFor="let game of games" class="game" [routerLink]="['/score/' + game.id]">
+  <img src="{{game.imageUrl}}" alt="{{game.title}}" />
+</a>

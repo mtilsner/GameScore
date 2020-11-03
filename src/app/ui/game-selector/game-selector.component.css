@@ -1,0 +1,23 @@
+.header {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  background: white;
+  margin-bottom: -5px;
+}
+
+.header input {
+  width: calc(100% - 10px);
+  margin: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.game {
+  display: inline-block;
+  margin: 5px;
+}
